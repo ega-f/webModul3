@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+    <link rel="stylesheet" href="css/stylePemesanan.css">
+</head>
+<body>
+    <form method="get" class="form-container">
+        <h1 align="center">Form Pemesanan</h1>
+        <table align="center">
+            <tr>
+                <td><label for="id">Id Pemesan</label></td>
+                <td><input type="number" id="id" maxlength="10" min="2" size="50" required /></td>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama Pemesan</label></td>
+                <td><input type="text" name="nama" id="nama" size="50" required /></td>
+            </tr>
+            <tr>
+                <td><label for="identitas">Nomor Identitas</label></td>
+                <td><input type="number" id="identitas" size="50" maxlength="10" min="5" required /></td>
+            </tr>
+            <tr>
+                <td><label for="kamar">Jenis Kamar</label></td>
+                <td>
+                    <select name="kamar">
+                        <option value="-">--Silahkan Pilih Kamar--</option>
+                        <option value="standard">Standard</option>
+                        <option value="Delux">Delux</option>
+                        <option value="Family">Family</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="harga">Harga</label></td>
+                <td><input type="number" placeholder="RP." size="50" required /></td>
+            </tr>
+            <tr>
+                <td><label for="tglPemesanan">Tanggal Pesan</label></td>
+                <td><input type="date" name="tglPemesanan" id="tglPemesanan" required /></td>
+            </tr>
+            <tr>
+                <td><label for="durasi">Durasi Menginap</label></td>
+                <td><input type="number" id="durasi" min="1"> Hari</td>
+            </tr>
+            <tr>
+                <td><label for="sarapan">Termasuk Breakfast</label></td>
+                <td><input type="checkbox" name="sarapan" id="sarapan"> Ya</td>
+            </tr>
+            <tr>
+                <td><label for="total">Total Bayar</label></td>
+                <td><input type="number" name="total" id="total" size="50"></td>
+            </tr>
+        </table>
+        <br>
+        <div class="button-container">
+            <input type="button" name="save" value="Simpan" id="simpan">
+            <input type="button" name="cancel" value="Batal" id="cancel">
+        </div>
+    </form>
+</html>
+
